@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFStringClass", "JFStringClass\JFStringClass.vcxproj", "{018813B9-5ACC-470E-92F4-30B238547E41}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFStringClasses", "JFStringClass\JFStringClass.vcxproj", "{018813B9-5ACC-470E-92F4-30B238547E41}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TESTClass", "TESTClass\TESTClass.vcxproj", "{8D05FA26-AA06-4D06-91B2-F89484D26924}"
+	ProjectSection(ProjectDependencies) = postProject
+		{018813B9-5ACC-470E-92F4-30B238547E41} = {018813B9-5ACC-470E-92F4-30B238547E41}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,2 +1,4 @@
-﻿  JFSTR.cpp
-  JFStringClass.vcxproj -> C:\Users\youngmin\Desktop\ProjectJF\c++\Src\\..\Lib\JFStringClass.lib
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (D:\ProjectJF\c++\Src\\..\Output\) contains files shared from another project (JFStringClass.vcxproj, TESTClass.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  JFSTR.cpp
+d:\projectjf\c++\src\jfstringclass\jfstr.cpp(14): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  JFStringClass.vcxproj -> D:\ProjectJF\c++\Src\\..\Lib\JFStringClasses_x64_v140_Debug.lib
