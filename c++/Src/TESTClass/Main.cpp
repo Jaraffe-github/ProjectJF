@@ -5,7 +5,8 @@
 #include "JFStringClass/JFSTR.h"
 #pragma comment(lib, "JFStringClasses_x64_v140_Debug.lib")
 
-#include <string>
+// test
+#include <iostream>
 
 void main()
 {
@@ -14,9 +15,9 @@ void main()
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 #endif
 
-	JF::JFString t("tttt");
-	JF::JFString tt(t);
-
-	std::string asd;
-	asd[0];
+	// String Reverse
+	char Test[] = "I Don't have any Question";
+	std::cout << Test << std::endl;
+	JF::JFStringUT::Reverse(Test);
+	std::cout << Test << std::endl;
 }

@@ -2,15 +2,9 @@
 
 namespace JF
 {
-	class JFString
+	namespace JFStringUT
 	{
-	public:
-		JFString(char c);
-		JFString(const char* str);
-		JFString(const JFString& str);
-
-	private:
-		char*	m_pSTR;
-		int		m_STRLength;
-	};
+		// String Reverse Function ( ex ) Hello -> olleh )
+		char* Reverse(char* p_pStr);
+	}
 }
