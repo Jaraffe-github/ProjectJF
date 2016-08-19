@@ -2,8 +2,7 @@
 #include "crtdbg.h"
 
 // 문자열 클래스.
-#include "JFStringClass/JFSTR.h"
-#pragma comment(lib, "JFStringClasses_x64_v140_Debug.lib")
+#include "JFStringClass/JFStringClasses.h"
 
 // test
 #include <iostream>
