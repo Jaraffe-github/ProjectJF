@@ -7,8 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFStringClasses", "JFString
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TESTClass", "TESTClass\TESTClass.vcxproj", "{8D05FA26-AA06-4D06-91B2-F89484D26924}"
 	ProjectSection(ProjectDependencies) = postProject
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65} = {93A21F38-E25A-4DD1-910E-4751E43F9A65}
 		{018813B9-5ACC-470E-92F4-30B238547E41} = {018813B9-5ACC-470E-92F4-30B238547E41}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFStudyClasses", "JFStudyClasses\JFStudyClasses.vcxproj", "{93A21F38-E25A-4DD1-910E-4751E43F9A65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +37,14 @@ Global
 		{8D05FA26-AA06-4D06-91B2-F89484D26924}.Release|x64.Build.0 = Release|x64
 		{8D05FA26-AA06-4D06-91B2-F89484D26924}.Release|x86.ActiveCfg = Release|Win32
 		{8D05FA26-AA06-4D06-91B2-F89484D26924}.Release|x86.Build.0 = Release|Win32
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Debug|x64.ActiveCfg = Debug|x64
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Debug|x64.Build.0 = Debug|x64
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Debug|x86.ActiveCfg = Debug|Win32
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Debug|x86.Build.0 = Debug|Win32
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Release|x64.ActiveCfg = Release|x64
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Release|x64.Build.0 = Release|x64
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Release|x86.ActiveCfg = Release|Win32
+		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

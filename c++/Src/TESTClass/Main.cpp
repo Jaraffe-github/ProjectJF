@@ -7,6 +7,8 @@
 // test
 #include <iostream>
 
+#include <list>
+
 void main()
 {
 	// Debug Mode Memory Leak Check
@@ -19,4 +21,5 @@ void main()
 	std::cout << Test << std::endl;
 	JF::JFStringUT::Reverse(Test);
 	std::cout << Test << std::endl;
+
 }
