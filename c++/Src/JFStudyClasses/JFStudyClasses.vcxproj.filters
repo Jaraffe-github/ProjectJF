@@ -5,10 +5,14 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFLinkedList.h">
       <Filter>LinkedList</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFSortUtiles.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LinkedList">
       <UniqueIdentifier>{8ae21222-eed2-4cb0-ab71-70fb809fecb1}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JFSortUtiles.cpp" />
   </ItemGroup>
 </Project>

@@ -49,4 +49,46 @@ void main()
 		std::cout << std::endl;
 		std::cout << std::endl;
 	}
+
+	// BubbleSort
+	{
+		std::cout << "BubbleSort" << std::endl;
+		int sortDatas[] = { 5, 2, 1, 6, 3, 9, 4, 8, 7 };
+		int length = sizeof(sortDatas) / sizeof(sortDatas[0]);
+		for (int i = 0; i < length; ++i)
+		{
+			std::cout << sortDatas[i] << " ";
+		}
+		std::cout << std::endl;
+
+		JF::JFSortUtiles::BubbleSort(sortDatas, length);
+
+		for (int i = 0; i < length; ++i)
+		{
+			std::cout << sortDatas[i] << " ";
+		}
+		std::cout << std::endl;
+		std::cout << std::endl;
+	}
+
+	// InsertionSort
+	{
+		std::cout << "InsertionSort" << std::endl;
+		int sortDatas[] = { 5, 2, 1, 6, 3, 9, 4, 8, 7 };
+		int length = sizeof(sortDatas) / sizeof(sortDatas[0]);
+		for (int i = 0; i < length; ++i)
+		{
+			std::cout << sortDatas[i] << " ";
+		}
+		std::cout << std::endl;
+
+		JF::JFSortUtiles::InsertionSort(sortDatas, length);
+
+		for (int i = 0; i < length; ++i)
+		{
+			std::cout << sortDatas[i] << " ";
+		}
+		std::cout << std::endl;
+		std::cout << std::endl;
+	}
 }
