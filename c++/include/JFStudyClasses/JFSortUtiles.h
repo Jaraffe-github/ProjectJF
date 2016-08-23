@@ -72,12 +72,18 @@ namespace JF
 		template<typename TData>
 		void QuickSort(TData p_SortData[], int p_nLeft, int p_nRight)
 		{
-			if (p_nLeft < p_nRight)
-			{
-				int nIndex = Partition(p_SortData, p_nLeft, p_nRight);
+			int nIndex = Partition(p_SortData, p_nLeft, p_nRight);
 
-				QuickSort(p_SortData, p_nLeft, nIndex - 1);
-				QuickSort(p_SortData, nIndex + 1, p_nRight);
+			int nLeftIndex = nIndex;
+			while (p_nLeft < nLeftIndex)
+			{
+				nLeftIndex = Partition(p_SortData, p_nLeft, --nLeftIndex);
+			}
+
+			int nRightIndex = nIndex;
+			while (nRightIndex < p_nRight)
+			{
+				nRightIndex = Partition(p_SortData, ++nRightIndex, p_nRight);
 			}
 
 			//qsort((void*)p_SortData, p_nRight + 1, sizeof(p_SortData[0]), CompareScore);
