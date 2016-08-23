@@ -5,14 +5,21 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFLinkedList.h">
       <Filter>LinkedList</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\JFStudyClasses\JFSortUtiles.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFSortUtiles.h">
+      <Filter>Sort</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LinkedList">
       <UniqueIdentifier>{8ae21222-eed2-4cb0-ab71-70fb809fecb1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sort">
+      <UniqueIdentifier>{036a1ad0-97f1-4eed-a19c-cb0f32a941c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="JFSortUtiles.cpp" />
+    <ClCompile Include="JFSortUtiles.cpp">
+      <Filter>Sort</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
