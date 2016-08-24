@@ -1,5 +1,7 @@
 #pragma once
 
+#include <queue>
+
 namespace JF
 {
 	namespace JFSortUtiles
@@ -72,18 +74,35 @@ namespace JF
 		template<typename TData>
 		void QuickSort(TData p_SortData[], int p_nLeft, int p_nRight)
 		{
+			struct PartitionData
+			{
+				PartitionData(int p_nPivot, int p_nLeft, int p_nRight)
+					: nPivot(p_nPivot), nLeft(p_nLeft), nRight(p_nRight) {}
+
+				int nPivot;
+				int nLeft;
+				int nRight;
+			};
+
+			// First partition calculation.
 			int nIndex = Partition(p_SortData, p_nLeft, p_nRight);
 
-			int nLeftIndex = nIndex;
-			while (p_nLeft < nLeftIndex)
+			// partition calculation Loop.
+			std::queue<PartitionData> pivotList;
+			pivotList.push(PartitionData(nIndex, p_nLeft, p_nRight));
+			while (pivotList.size() != 0)
 			{
-				nLeftIndex = Partition(p_SortData, p_nLeft, --nLeftIndex);
-			}
+				PartitionData* data = &pivotList.front();
 
-			int nRightIndex = nIndex;
-			while (nRightIndex < p_nRight)
-			{
-				nRightIndex = Partition(p_SortData, ++nRightIndex, p_nRight);
+				int leftPivot = data->nPivot - 1;
+				if (data->nLeft < leftPivot)
+					pivotList.push(PartitionData(Partition(p_SortData, p_nLeft, leftPivot), data->nLeft, leftPivot));
+
+				int rightPivot = data->nPivot + 1;
+				if (data->nRight > rightPivot)
+					pivotList.push(PartitionData(Partition(p_SortData, rightPivot, p_nRight), rightPivot, data->nRight));
+
+				pivotList.pop();
 			}
 
 			//qsort((void*)p_SortData, p_nRight + 1, sizeof(p_SortData[0]), CompareScore);

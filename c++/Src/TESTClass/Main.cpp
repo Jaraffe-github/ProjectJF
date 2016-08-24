@@ -95,7 +95,7 @@ void main()
 	// QuickSort
 	{
 		std::cout << "QuickSort" << std::endl;
-		int sortDatas[] = { 5, 2, 1, 6, 3, 9, 4, 8, 7, 10, 15, 16, 11, 13, 20, 19 };
+		int sortDatas[] = { 17, 5, 21, 2, 12, 1, 18, 6, 25, 3, 9, 4, 8, 24, 7, 10, 15, 16, 23, 11, 13, 20, 19, 14, 22 };
 		int length = sizeof(sortDatas) / sizeof(sortDatas[0]);
 		for (int i = 0; i < length; ++i)
 		{
