@@ -8,6 +8,9 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFSortUtiles.h">
       <Filter>Sort</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFSearchUtiles.h">
+      <Filter>Search</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LinkedList">
@@ -16,10 +19,8 @@
     <Filter Include="Sort">
       <UniqueIdentifier>{036a1ad0-97f1-4eed-a19c-cb0f32a941c6}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="JFSortUtiles.cpp">
-      <Filter>Sort</Filter>
-    </ClCompile>
+    <Filter Include="Search">
+      <UniqueIdentifier>{883fdeb4-47c8-451b-bce0-0054875964b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

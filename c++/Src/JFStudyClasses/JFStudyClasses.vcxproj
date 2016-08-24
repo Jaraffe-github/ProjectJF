@@ -157,11 +157,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\JFStudyClasses\JFLinkedList.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFSearchUtiles.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFStudyClasses.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFSortUtiles.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="JFSortUtiles.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

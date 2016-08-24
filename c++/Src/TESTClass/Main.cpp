@@ -112,4 +112,45 @@ void main()
 		std::cout << std::endl;
 		std::cout << std::endl;
 	}
+
+	// QuickSort And BinarySearch
+	{
+		std::cout << "QuickSort And BinarySearch" << std::endl;
+		struct Data
+		{
+			Data(_In_ int _nGuid, _In_ int _nValue)
+				: nGUID(_nGuid), nValue(_nValue) {}
+
+			bool operator == (Data& _data)	{ if (nGUID == _data.nGUID) return true; else return false; }
+			bool operator >(Data& _data)	{ if (nGUID > _data.nGUID) return true; else return false; }
+			bool operator <(Data& _data)	{ if (nGUID < _data.nGUID) return true;	else return false; }
+			bool operator >=(Data& _data)	{ if (nGUID >= _data.nGUID) return true; else return false; }
+			bool operator <=(Data& _data)	{ if (nGUID <= _data.nGUID) return true; else return false; }
+
+			bool operator == (int _data)	{ if (nGUID == _data) return true; else	return false; }
+			bool operator >(int _data)		{ if (nGUID > _data) return true; else return false; }
+			bool operator <(int _data)		{ if (nGUID < _data) return true; else return false; }
+			bool operator >=(int _data)		{ if (nGUID >= _data) return true; else return false; }
+			bool operator <=(int _data)		{ if (nGUID <= _data) return true; else return false; }
+
+			int nGUID;
+			int nValue;
+		};
+
+		Data dataList[] = {
+			Data(20, 1), Data(2, 19), Data(3, 18), Data(5, 16), Data(6, 15), Data(15, 6), Data(8, 13), Data(7, 14), Data(9, 12), Data(10, 11),
+			Data(11, 10), Data(12, 9), Data(13, 8), Data(14, 7), Data(4, 17), Data(16, 5), Data(17, 4), Data(18, 3), Data(19, 2), Data(1, 20)
+		};
+		int nLength = sizeof(dataList) / sizeof(dataList[0]);
+
+		JF::JFSortUtiles::QuickSort(dataList, 0, nLength - 1);
+
+		int nFindData = 5;
+		Data* findData = JF::JFSearchUtiles::BinarySearch(dataList, nLength, nFindData);
+		if(findData != nullptr)
+			std::cout << "Find Data :" << nFindData << " Value : " << findData->nValue << std::endl;
+		else
+			std::cout << "BinarySearch No Data" << std::endl;
+	}
+	
 }
