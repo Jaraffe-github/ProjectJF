@@ -151,6 +151,60 @@ void main()
 			std::cout << "Find Data :" << nFindData << " Value : " << findData->nValue << std::endl;
 		else
 			std::cout << "BinarySearch No Data" << std::endl;
+
+		std::cout << std::endl;
 	}
-	
+
+	// RedBlackTree
+	{
+		std::cout << "RedBlackTree" << std::endl;
+
+		JF::JFStudy::RedBlackTree<int> redblackTree;
+		redblackTree.InsertNode(20);
+		redblackTree.InsertNode(15);
+		redblackTree.InsertNode(10);
+		redblackTree.InsertNode(26);
+		redblackTree.InsertNode(27);
+		redblackTree.InsertNode(30);
+		redblackTree.InsertNode(5);
+		redblackTree.InsertNode(1);
+		redblackTree.InsertNode(18);
+		redblackTree.InsertNode(2);
+		redblackTree.InsertNode(4);
+		redblackTree.InsertNode(13);
+		redblackTree.InsertNode(8);
+		redblackTree.InsertNode(16);
+		redblackTree.InsertNode(25);
+		redblackTree.InsertNode(31);
+		redblackTree.InsertNode(34);
+		redblackTree.InsertNode(37);
+		redblackTree.InsertNode(40);
+		redblackTree.InsertNode(19);
+		redblackTree.InsertNode(32);
+		redblackTree.InsertNode(33);
+		redblackTree.InsertNode(17);
+		redblackTree.InsertNode(14);
+		redblackTree.InsertNode(11);
+		redblackTree.InsertNode(38);
+		redblackTree.InsertNode(39);
+		redblackTree.InsertNode(24);
+		redblackTree.InsertNode(9);
+		redblackTree.InsertNode(7);
+		redblackTree.InsertNode(3);
+		redblackTree.InsertNode(6);
+		redblackTree.InsertNode(12);
+		redblackTree.InsertNode(23);
+		redblackTree.InsertNode(21);
+		redblackTree.InsertNode(22);
+		redblackTree.InsertNode(35);
+		redblackTree.InsertNode(36);
+		redblackTree.InsertNode(28);
+		redblackTree.InsertNode(29);
+
+		redblackTree.RemoveNode(15);
+
+		redblackTree.PrintTree(0, 0);
+
+		std::cout << std::endl;
+	}
 }

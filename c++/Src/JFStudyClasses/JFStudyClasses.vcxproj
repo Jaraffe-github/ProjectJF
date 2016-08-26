@@ -160,6 +160,7 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFSearchUtiles.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFStudyClasses.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFSortUtiles.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFRedBlackTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

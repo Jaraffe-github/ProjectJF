@@ -11,6 +11,7 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFSearchUtiles.h">
       <Filter>Search</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFRedBlackTree.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LinkedList">

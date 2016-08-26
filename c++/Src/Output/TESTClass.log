@@ -1,4 +1,20 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (C:\Users\youngmin\Desktop\ProjectJF\ProjectJF\c++\Src\\..\Output\) contains files shared from another project (JFStringClass.vcxproj, JFStringClasses.vcxproj, JFStudyClasses.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Main.cpp
+c:\users\youngmin\desktop\projectjf\projectjf\c++\include\jfstudyclasses\jfredblacktree.h(427): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  c:\users\youngmin\desktop\projectjf\projectjf\c++\include\jfstudyclasses\jfredblacktree.h(404): note: while compiling class template member function 'void JF::JFStudy::RedBlackTree<int>::_PrintTree(JF::JFStudy::RBTNode<TData> *,int,int)'
+          with
+          [
+              TData=int
+          ]
+  c:\users\youngmin\desktop\projectjf\projectjf\c++\include\jfstudyclasses\jfredblacktree.h(72): note: see reference to function template instantiation 'void JF::JFStudy::RedBlackTree<int>::_PrintTree(JF::JFStudy::RBTNode<TData> *,int,int)' being compiled
+          with
+          [
+              TData=int
+          ]
+  c:\users\youngmin\desktop\projectjf\projectjf\c++\src\testclass\main.cpp(163): note: see reference to class template instantiation 'JF::JFStudy::RedBlackTree<int>' being compiled
+c:\users\youngmin\desktop\projectjf\projectjf\c++\include\jfstudyclasses\jfredblacktree.h(429): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\youngmin\desktop\projectjf\projectjf\c++\include\jfstudyclasses\jfredblacktree.h(68): warning C4715: 'JF::JFStudy::RedBlackTree<int>::RemoveNode': not all control paths return a value
   TESTClass.vcxproj -> C:\Users\youngmin\Desktop\ProjectJF\ProjectJF\c++\Src\\..\exe\TESTClass.exe
   TESTClass.vcxproj -> C:\Users\youngmin\Desktop\ProjectJF\ProjectJF\c++\Src\\..\exe\TESTClass.pdb (Full PDB)
