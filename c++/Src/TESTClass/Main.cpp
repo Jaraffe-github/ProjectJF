@@ -207,4 +207,30 @@ void main()
 
 		std::cout << std::endl;
 	}
+
+	// JFPriorityQueue
+	{
+		std::cout << "JFPriorityQueue" << std::endl;
+
+		JF::JFStudy::PriorityQueue<int> priorityQueue(3);
+		priorityQueue.Insert(6);
+		priorityQueue.Insert(3);
+		priorityQueue.Insert(8);
+		priorityQueue.Insert(4);
+		priorityQueue.Insert(9);
+		priorityQueue.Insert(2);
+		priorityQueue.Insert(7);
+		priorityQueue.Insert(5);
+		priorityQueue.Insert(1);
+
+		priorityQueue.PrintNode();
+		std::cout << "MinValue = " << *priorityQueue.GetMinData() << std::endl;
+
+		std::cout << "DeleteMin 3" << std::endl;
+		priorityQueue.DeleteMin();
+		priorityQueue.DeleteMin();
+		priorityQueue.DeleteMin();
+
+		priorityQueue.PrintNode();
+	}
 }

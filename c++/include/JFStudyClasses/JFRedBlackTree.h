@@ -65,6 +65,8 @@ namespace JF
 					return false;
 
 				_DestroyNode(removeNode);
+
+				return true;
 			}
 
 			void PrintTree(int _Depth, int _BlackCount)
@@ -424,9 +426,9 @@ namespace JF
 				}
 
 				if (_pNode->pLeft == m_pNil && _pNode->pRight == m_pNil)
-					sprintf(cnt, "----------- %d", _nBlackCount);
+					sprintf_s(cnt, "----------- %d", _nBlackCount);
 				else
-					sprintf(cnt ,"");
+					sprintf_s(cnt ,"");
 
 				for (i = 0; i < _nDepth; ++i)
 					printf("  ");

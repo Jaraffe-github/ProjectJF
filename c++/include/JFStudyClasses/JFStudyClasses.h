@@ -5,6 +5,8 @@
 //----------------------------------------------------------------------------
 #include "JFLinkedList.h"
 #include "JFRedBlackTree.h"
+#include "JFStudyClasses.h"
+#include "JFPriorityQueue.h"
 
 //----------------------------------------------------------------------------
 // Utiles

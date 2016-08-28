@@ -12,6 +12,7 @@
       <Filter>Search</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\JFStudyClasses\JFRedBlackTree.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFPriorityQueue.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LinkedList">
