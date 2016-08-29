@@ -4,13 +4,22 @@ namespace JF
 {
 	namespace JFStudy
 	{
-		template<typename TData>
-		struct QueueHeap
+		template<typename TKey, typename TValue>
+		struct PQNode
 		{
-			TData Data;
+		public:
+			PQNode(_In_ TKey _key, _In_ TValue _value)
+			{
+				Key		= _key;
+				Value	= _value;
+			}
+
+		public:
+			TKey	Key;
+			TValue	Value;
 		};
 
-		template<typename TData>
+		template<typename TKey, typename TValue>
 		class PriorityQueue
 		{
 		public:
@@ -18,7 +27,7 @@ namespace JF
 			{
 				if (_ninitSize > 0)
 				{
-					m_pNodes	= (QueueHeap<TData>*)malloc(sizeof(QueueHeap<TData>) * _ninitSize);
+					m_pNodes	= (PQNode<TKey, TValue>*)malloc(sizeof(PQNode<TKey, TValue>) * _ninitSize);
 					m_nCapactiy = _ninitSize;
 					m_nUsedSize = 0;
 				}
@@ -37,28 +46,26 @@ namespace JF
 			}
 
 		public:
-			void Insert(_In_ TData _newData)
+			void Enqueue(_In_ PQNode<TKey, TValue> _NewNode)
 			{
 				int nCurrIndex		= m_nUsedSize;
 				int nParentIndex	= _GetParentIndex(nCurrIndex);
 
-				if (m_nCapactiy <= 1)
-				{
-					m_nCapactiy = 3;
-					m_pNodes	= (QueueHeap<TData>*)realloc(m_pNodes, sizeof(QueueHeap<TData>) * m_nCapactiy);
-				}
 				// if max Capactiy, m_nCapactiy * 2
 				if (m_nUsedSize == m_nCapactiy)
 				{
+					if (m_nCapactiy <= 0)
+						m_nCapactiy = 1;
+
 					m_nCapactiy *= 2;
-					m_pNodes	= (QueueHeap<TData>*)realloc(m_pNodes, sizeof(QueueHeap<TData>) * m_nCapactiy);
+					m_pNodes	= (PQNode<TKey, TValue>*)realloc(m_pNodes, sizeof(PQNode<TKey, TValue>) * m_nCapactiy);
 				}
 
 				// Add NewNode 
-				m_pNodes[nCurrIndex].Data = _newData;
+				m_pNodes[nCurrIndex] = _NewNode;
 
 				// Refresh
-				while (m_nUsedSize > 0 && m_pNodes[nCurrIndex].Data < m_pNodes[nParentIndex].Data)
+				while (m_nUsedSize > 0 && m_pNodes[nCurrIndex].Key < m_pNodes[nParentIndex].Key)
 				{
 					_SwapNodes(nCurrIndex, nParentIndex);
 
@@ -70,9 +77,9 @@ namespace JF
 				++m_nUsedSize;
 			}
 
-			void DeleteMin()
+			void Dequeue()
 			{
-				int nDataSize		= sizeof(QueueHeap<TData>);
+				int nDataSize		= sizeof(PQNode<TKey, TValue>);
 				int nParentIndex	= 0;
 				int nLeftIndex		= 0;
 				int nRightIndex		= 0;
@@ -99,13 +106,13 @@ namespace JF
 					}
 					else
 					{
-						if (m_pNodes[nLeftIndex].Data > m_pNodes[nRightIndex].Data)
+						if (m_pNodes[nLeftIndex].Key > m_pNodes[nRightIndex].Key)
 							nSelectedChild = nRightIndex;
 						else
 							nSelectedChild = nLeftIndex;
 					}
 
-					if (m_pNodes[nSelectedChild].Data < m_pNodes[nParentIndex].Data)
+					if (m_pNodes[nSelectedChild].Key < m_pNodes[nParentIndex].Key)
 					{
 						_SwapNodes(nParentIndex, nSelectedChild);
 						nParentIndex = nSelectedChild;
@@ -120,32 +127,23 @@ namespace JF
 				if (m_nUsedSize < (m_nCapactiy / 2))
 				{
 					m_nCapactiy /= 2;
-					m_pNodes	= (QueueHeap<TData>*)realloc(m_pNodes, sizeof(QueueHeap<TData>) * m_nCapactiy);
+					m_pNodes	= (PQNode<TKey, TValue>*)realloc(m_pNodes, sizeof(PQNode<TKey, TValue>) * m_nCapactiy);
 				}
 			}
 
-			TData* GetMinData()
+			PQNode<TKey, TValue>* GetMinData()
 			{
 				if (m_nUsedSize > 0)
-					return &m_pNodes[0].Data;
+					return &m_pNodes[0];
 				else
 					return nullptr;
 			}
 
-			void PrintNode()
-			{
-				for (int i = 0; i < m_nUsedSize; ++i)
-				{
-					printf("%d ", m_pNodes[i].Data);
-				}
-				printf("\n");
-			}
-
 		private:
-			QueueHeap<TData>* _CreateHeap(_In_ TData _newData)
+			PQNode<TKey, TValue>* _CreateHeap(_In_ PQNode<TKey, TValue> _newData)
 			{
-				QueueHeap<TData>* pNewNode = new QueueHeap<TData>();
-				pNewNode->Data = _newData;
+				PQNode<TKey, TValue>* pNewNode = new PQNode<TKey, TValue>();
+				pNewNode = _newData;
 
 				return pNewNode;
 			}
@@ -158,8 +156,8 @@ namespace JF
 
 			void _SwapNodes(_In_ int _nIndex1, _In_ int _nIndex2)
 			{
-				int nCopySize = sizeof(QueueHeap<TData>);
-				QueueHeap<TData>* pTemp = (QueueHeap<TData>*)malloc(nCopySize);
+				int nCopySize = sizeof(PQNode<TKey, TValue>);
+				PQNode<TKey, TValue>* pTemp = (PQNode<TKey, TValue>*)malloc(nCopySize);
 
 				memcpy(pTemp,				&m_pNodes[_nIndex1],	nCopySize);
 				memcpy(&m_pNodes[_nIndex1], &m_pNodes[_nIndex2],	nCopySize);
@@ -184,7 +182,7 @@ namespace JF
 			}
 
 		private:
-			QueueHeap<TData>* m_pNodes;
+			PQNode<TKey, TValue>* m_pNodes;
 			int m_nCapactiy;
 			int m_nUsedSize;
 		};

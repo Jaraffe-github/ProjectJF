@@ -212,25 +212,55 @@ void main()
 	{
 		std::cout << "JFPriorityQueue" << std::endl;
 
-		JF::JFStudy::PriorityQueue<int> priorityQueue(3);
-		priorityQueue.Insert(6);
-		priorityQueue.Insert(3);
-		priorityQueue.Insert(8);
-		priorityQueue.Insert(4);
-		priorityQueue.Insert(9);
-		priorityQueue.Insert(2);
-		priorityQueue.Insert(7);
-		priorityQueue.Insert(5);
-		priorityQueue.Insert(1);
+		JF::JFStudy::PriorityQueue<int, char> priorityQueue(3);
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(5, 'e'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(2, 'b'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(8, 'h'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(3, 'c'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(6, 'f'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(1, 'a'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(4, 'd'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(9, 'i'));
+		priorityQueue.Enqueue(JF::JFStudy::PQNode<int, char>(7, 'g'));
 
-		priorityQueue.PrintNode();
-		std::cout << "MinValue = " << *priorityQueue.GetMinData() << std::endl;
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
+		std::cout << "MinValue Key : " << priorityQueue.GetMinData()->Key << " Value : " << priorityQueue.GetMinData()->Value << std::endl;
+		priorityQueue.Dequeue();
 
-		std::cout << "DeleteMin 3" << std::endl;
-		priorityQueue.DeleteMin();
-		priorityQueue.DeleteMin();
-		priorityQueue.DeleteMin();
+		std::cout << std::endl;
+	}
 
-		priorityQueue.PrintNode();
+	// DivisionHashTable
+	{
+		std::cout << "DivisionHashTable" << std::endl;
+
+		JF::JFStudy::JFDHashTable<char> hashTable(389);
+		hashTable.Insert(165, 'a');
+		hashTable.Insert(223, 'b');
+		hashTable.Insert(307, 'c');
+		hashTable.Insert(44, 'd');
+		hashTable.Insert(501, 'e');
+		hashTable.Insert(645, 'f');
+		hashTable.Insert(72, 'g');
+		hashTable.Insert(875, 'h');
+		hashTable.Insert(923, 'i');
+
+		int nkey = 501;
+		std::cout << "Key : " << nkey << " Value : " << *hashTable.GetData(nkey) << std::endl;
 	}
 }

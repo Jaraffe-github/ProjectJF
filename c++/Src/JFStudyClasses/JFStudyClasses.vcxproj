@@ -156,6 +156,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFDivisionHashTable.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFLinkedList.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFSearchUtiles.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFStudyClasses.h" />

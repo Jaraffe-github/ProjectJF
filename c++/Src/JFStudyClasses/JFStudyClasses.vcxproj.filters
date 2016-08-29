@@ -11,18 +11,34 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFSearchUtiles.h">
       <Filter>Search</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\JFStudyClasses\JFRedBlackTree.h" />
-    <ClInclude Include="..\..\include\JFStudyClasses\JFPriorityQueue.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFDivisionHashTable.h">
+      <Filter>HashTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFRedBlackTree.h">
+      <Filter>Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFPriorityQueue.h">
+      <Filter>Queue</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="LinkedList">
-      <UniqueIdentifier>{8ae21222-eed2-4cb0-ab71-70fb809fecb1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Sort">
       <UniqueIdentifier>{036a1ad0-97f1-4eed-a19c-cb0f32a941c6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Search">
       <UniqueIdentifier>{883fdeb4-47c8-451b-bce0-0054875964b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HashTable">
+      <UniqueIdentifier>{74aeaddd-289d-4443-a3d0-b053d5e8d8a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LinkedList">
+      <UniqueIdentifier>{8ae21222-eed2-4cb0-ab71-70fb809fecb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tree">
+      <UniqueIdentifier>{8fd7204c-48ea-459e-ab80-8b5f0c3e5e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Queue">
+      <UniqueIdentifier>{1c077223-9d28-458d-bb1b-a603bda825b5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

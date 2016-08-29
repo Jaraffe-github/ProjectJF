@@ -7,6 +7,7 @@
 #include "JFRedBlackTree.h"
 #include "JFStudyClasses.h"
 #include "JFPriorityQueue.h"
+#include "JFDivisionHashTable.h"
 
 //----------------------------------------------------------------------------
 // Utiles
