@@ -20,6 +20,9 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFPriorityQueue.h">
       <Filter>Queue</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFDigitsFolding.h">
+      <Filter>HashTable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sort">

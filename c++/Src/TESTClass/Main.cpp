@@ -263,4 +263,21 @@ void main()
 		int nkey = 501;
 		std::cout << "Key : " << nkey << " Value : " << *hashTable.GetData(nkey) << std::endl;
 	}
+
+	// DighitsFolding
+	{
+		std::cout << "DighitsFolding" << std::endl;
+
+		JF::JFStudy::JFDighitsFolding<int> hashTable(12289);
+		hashTable.Insert("KFRE", 4, 1);
+		hashTable.Insert("SNRZ", 4, 2);
+		hashTable.Insert("c", 1, 3);
+		hashTable.Insert("e", 1, 4);
+		hashTable.Insert("f", 1, 5);
+		hashTable.Insert("h", 1, 6);
+		hashTable.Insert("i", 1, 7);
+
+		char* nkey = "KFRE";
+		std::cout << "Key : " << nkey << " Value : " << *hashTable.GetData(nkey, 4) << std::endl;
+	}
 }

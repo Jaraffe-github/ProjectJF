@@ -8,6 +8,7 @@
 #include "JFStudyClasses.h"
 #include "JFPriorityQueue.h"
 #include "JFDivisionHashTable.h"
+#include "JFDigitsFolding.h"
 
 //----------------------------------------------------------------------------
 // Utiles
