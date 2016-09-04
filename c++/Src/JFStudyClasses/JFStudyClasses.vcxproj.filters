@@ -23,6 +23,9 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFDigitsFolding.h">
       <Filter>HashTable</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFBoyerMoore.h">
+      <Filter>Search</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sort">
@@ -43,5 +46,10 @@
     <Filter Include="Queue">
       <UniqueIdentifier>{1c077223-9d28-458d-bb1b-a603bda825b5}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JFBoyerMoore.cpp">
+      <Filter>Search</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
