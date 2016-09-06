@@ -4,10 +4,10 @@
 int JF::JFStudy::BoyerMoore( char* _pText,  int _nTextSize,  int _nStart,  char* _pPattern,  int _nPatternSize)
 {
 	int nBCT[128];
-	int* pSuffix = (int*)calloc(_nPatternSize + 1, sizeof(int));
-	int* pGST = (int*)calloc(_nPatternSize + 1, sizeof(int));
-	int i = _nStart;
-	int j = 0;
+	int* pSuffix	= (int*)calloc(_nPatternSize + 1, sizeof(int));
+	int* pGST		= (int*)calloc(_nPatternSize + 1, sizeof(int));
+	int i			= _nStart;
+	int j			= 0;
 
 	int nPosition = -1;
 
@@ -16,7 +16,7 @@ int JF::JFStudy::BoyerMoore( char* _pText,  int _nTextSize,  int _nStart,  char*
 
 	while (i <= _nTextSize - _nPatternSize)
 	{
-		j = _nPatternSize -1;
+		j = _nPatternSize - 1;
 
 		while (j >= 0 && _pPattern[j] == _pText[i + j])
 			--j;
@@ -28,7 +28,7 @@ int JF::JFStudy::BoyerMoore( char* _pText,  int _nTextSize,  int _nStart,  char*
 		}
 		else
 		{
-			i += Max(pGST[j + i], j - nBCT[_pText[i + j]]);
+			i += Max(pGST[j + 1], j - nBCT[_pText[i + j]]);
 		}
 	}
 

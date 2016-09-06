@@ -286,18 +286,9 @@ void main()
 	{
 		std::cout << "BoyerMoore(String Search)" << std::endl;
 
-		char* pText = "Some regard the King James Bible to be a work of fiction, others the Holy word of God. I read the King James translation of the Bible some, when I was young, and more or less accepted what was taught about the King James Bible at the church I attended with my parents. "
-			"When I grew older, I looked at the Bible for myself, and at one point, almost gave up on the whole idea of God and all.The church I attended - when I was growing up - put a lot of stock in the original languages for translation.There was a lot of ranting in the church about how terrible a translation the King James actually was."
-			"Later, when I went to college, I took some years of Greek and a tad of Hebrew.I later came the conclusion that the Bible text was truthful, but that I had been mislead by the pastors teachings concerning what the Bible actually had to say."
-			"I personally feel as though I understand why there are hostile attitudes toward the Bible text.Not so sure, however, that I understand why anyone would feel so hostile toward a book they believe to be purely fiction."
-			"It is said that Life is stranger than fiction and perhaps, for some, truth is more mysterious."
-			"I imagine a good deal of turmoil over the Bible text has to do with the plethora of men / women of the cloth who put their own special spin on the Bible; and perhaps, a generous portion of synagogue or church goers who are neither hearers, nor doers of good."
-			"IMHO a lot of false ideas about the Bible text are popular.I imagine a majority of people dont know or care very little what the Bible text has to say, or even what it means.It seems common now for people to mock and deride the Bible.In the end, what is true will be true and what is false will be false."
-			"Although, I imagine some of the positive reviewers of the Bible text may know very little of the Bibles contents, I feel as though - it may also be the case -that some of the Bibles more negative, or sarcastic reviewers, are just as rash in their willingness to post a judgmental rant or comment concerning the King James Bible text."
-			"The King James translation of the Bible is maybe not the best translation for a modern reader, but for the most part is readable."
-			"Another favorite verse : For what shall it profit a man, if he shall gain the whole world, and lose his own soul ";
+		char* pText = "Some regard the King James Bible to be a work of fiction, others the Holy word of God.";
 
-		char* pSearchString = "James";
+		char* pSearchString = "others";
 		int nSearchStringLength = (int)strlen(pSearchString);
 		
 		std::cout << "SearchString : " << pSearchString << std::endl;
@@ -312,7 +303,7 @@ void main()
 		}
 		else
 		{
-			std::cout << "No Match" << std::endl;
+			std::cout << "No Match num : " << nSearchindex << std::endl;
 		}
 		std::cout << std::endl;
 	}
