@@ -155,6 +155,23 @@ void main()
 		std::cout << std::endl;
 	}
 
+	// MergeSort
+	{
+		std::cout << "MergeSort" << std::endl;
+
+		int datas[] = { 123, 231, 523, 122, 51, 24, 12, 45, 52, 59, 1245 };
+		int nLength = sizeof datas / sizeof datas[0];
+
+		JF::JFSortUtiles::MergeSort(datas, 0, nLength-1);
+
+		for (int i = 0; i < nLength; ++i)
+		{
+			std::cout << datas[i] << " ";
+		}
+		std::cout << std::endl;
+		std::cout << std::endl;
+	}
+
 	// RedBlackTree
 	{
 		std::cout << "RedBlackTree" << std::endl;
@@ -306,5 +323,28 @@ void main()
 			std::cout << "No Match num : " << nSearchindex << std::endl;
 		}
 		std::cout << std::endl;
+	}
+
+	// Power
+	{
+		std::cout << "Power" << std::endl;
+
+		int nNumber = 2;
+		int nExponent = 4;
+
+		int nResult = JF::JFStudy::Pow(nNumber, nExponent);
+
+		std::cout << "Number : " << nNumber << " Exponent : " << nExponent << " Result : " << nResult << std::endl;
+		std::cout << std::endl;
+	}
+
+	// Fibonacci
+	{
+		std::cout << "Fibonacci" << std::endl;
+
+		int n = 15;
+		unsigned int nResult = JF::JFStudy::Fibonacci(n);
+
+		std::cout << "Fibonacci N : " << n << " Result : " << nResult << std::endl;
 	}
 }

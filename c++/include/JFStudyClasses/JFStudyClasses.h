@@ -16,6 +16,7 @@
 #include "JFSortUtiles.h"
 #include "JFSearchUtiles.h"
 #include "JFBoyerMoore.h"
+#include "JFUtileFuntions.h"
 
 //----------------------------------------------------------------------------
 //

@@ -166,6 +166,7 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFSortUtiles.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFRedBlackTree.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFPriorityQueue.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFUtileFuntions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JFBoyerMoore.cpp" />

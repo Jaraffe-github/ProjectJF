@@ -175,5 +175,64 @@ namespace JF
 			else
 				return 0;
 		}
+
+		//----------------------------------------------------------------------------
+		// MergeSort
+		//----------------------------------------------------------------------------
+		template<typename TData>
+		void MergeSort(_Inout_ TData _Datas[], _In_ int _nStartIndex, _In_ int _nEndIndex)
+		{
+			int nMidIndex = 0;
+
+			if (_nEndIndex - _nStartIndex < 1)
+				return;
+
+			// Get Mid Index
+			nMidIndex = (_nStartIndex + _nEndIndex) / 2;
+
+			// Left, Right 
+			MergeSort(_Datas, _nStartIndex, nMidIndex);
+			MergeSort(_Datas, nMidIndex+1, _nEndIndex);
+
+			Merge(_Datas, _nStartIndex, nMidIndex, _nEndIndex);
+		}
+
+		template<typename TData>
+		void Merge(_Inout_ TData _Datas[], _In_ int _nStartIndex, _In_ int _nMidIndex, _In_ int _nEndIndex)
+		{
+			int nLeftIndex	= _nStartIndex;
+			int nRightIndex = _nMidIndex + 1;
+
+			int* pDestination = (int*)malloc(sizeof(int) * (_nEndIndex - _nStartIndex + 1));
+
+			int nDestIndex = 0;
+			while (nLeftIndex <= _nMidIndex && nRightIndex <= _nEndIndex)
+			{
+				if (_Datas[nLeftIndex] < _Datas[nRightIndex])
+				{
+					pDestination[nDestIndex] = _Datas[nLeftIndex];
+					++nLeftIndex;
+				}
+				else
+				{
+					pDestination[nDestIndex] = _Datas[nRightIndex];
+					++nRightIndex;
+				}
+
+				++nDestIndex;
+			}
+
+			while (nLeftIndex <= _nMidIndex)
+				pDestination[nDestIndex++] = _Datas[nLeftIndex++];
+
+			while (nRightIndex <= _nEndIndex)
+				pDestination[nDestIndex++] = _Datas[nRightIndex++];
+
+			nDestIndex = 0;
+			for (int i = _nStartIndex; i <= _nEndIndex; ++i)
+				_Datas[i] = pDestination[nDestIndex++];
+
+			free(pDestination);
+		}
 	}
 }

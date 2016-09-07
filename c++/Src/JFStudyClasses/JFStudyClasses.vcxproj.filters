@@ -26,6 +26,7 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFBoyerMoore.h">
       <Filter>Search</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\JFStudyClasses\JFUtileFuntions.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sort">
