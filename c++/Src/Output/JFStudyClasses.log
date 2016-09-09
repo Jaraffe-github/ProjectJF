@@ -1,2 +1,0 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (C:\Users\youngmin\Desktop\ProjectJF\ProjectJF\c++\Src\\..\Output\) contains files shared from another project (JFStringClass.vcxproj, JFStringClasses.vcxproj, TESTClass.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  JFStudyClasses.vcxproj -> C:\Users\youngmin\Desktop\ProjectJF\ProjectJF\c++\Src\\..\Lib\JFStudyClasses_x64_v140_Debug.lib

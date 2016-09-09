@@ -346,5 +346,43 @@ void main()
 		unsigned int nResult = JF::JFStudy::Fibonacci(n);
 
 		std::cout << "Fibonacci N : " << n << " Result : " << nResult << std::endl;
+		std::cout << std::endl;
+	}
+
+	// LCS
+	{
+		std::cout << "LCS" << std::endl;
+
+		char* pX = "GOOD MORNING.";
+		char* pY = "GUTEN MORGEN";
+		char* pResult;
+
+		int nLenX = strlen(pX);
+		int nLenY = strlen(pY);
+
+		int i = 0;
+		int j = 0;
+		int nLength = 0;
+
+		JF::JFSearchUtiles::LCSTable table;
+
+		table.ppData = (int**)malloc(sizeof(int*) * (nLenX + 1));
+
+		for (i = 0; i < nLenX + 1; ++i)
+		{
+			table.ppData[i] = (int*)malloc(sizeof(int) + (nLenY + 1));
+			memset(table.ppData[i], 0, sizeof(int) * (nLenY + 1));
+		}
+
+		nLength = JF::JFSearchUtiles::LCS(pX, pY, nLenX, nLenY, &table);
+
+		JF::JFSearchUtiles::LCS_PrintTable(&table, pX, pY, nLenX, nLenY);
+
+		pResult = (char*)malloc(sizeof(table.ppData[nLenX][nLenY] + 1));
+		sprintf(pResult, "");
+
+		JF::JFSearchUtiles::LCS_TraceBack(pX, pY, nLenX, nLenY, &table, pResult);
+
+		printf("\n");
 	}
 }
