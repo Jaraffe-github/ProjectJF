@@ -8,6 +8,8 @@ namespace JF
 		struct PQNode
 		{
 		public:
+			PQNode(){}
+
 			PQNode(_In_ TKey _key, _In_ TValue _value)
 			{
 				Key		= _key;
@@ -137,6 +139,11 @@ namespace JF
 					return &m_pNodes[0];
 				else
 					return nullptr;
+			}
+
+			int GetUsedSize()
+			{
+				return m_nUsedSize;
 			}
 
 		private:

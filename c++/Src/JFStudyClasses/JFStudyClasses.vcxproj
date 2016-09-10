@@ -160,6 +160,7 @@
     <ClInclude Include="..\..\include\JFStudyClasses\JFBoyerMoore.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFDigitsFolding.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFDivisionHashTable.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFHuffman.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFLinkedList.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFSearchUtiles.h" />
     <ClInclude Include="..\..\include\JFStudyClasses\JFStudyClasses.h" />
@@ -170,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JFBoyerMoore.cpp" />
+    <ClCompile Include="JFHuffman.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

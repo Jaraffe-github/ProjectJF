@@ -9,6 +9,7 @@
 #include "JFPriorityQueue.h"
 #include "JFDivisionHashTable.h"
 #include "JFDigitsFolding.h"
+#include "JFHuffman.h"
 
 //----------------------------------------------------------------------------
 // Utiles

@@ -83,12 +83,12 @@ namespace JF
 			{
 				char tempLCS[100];
 				strcpy(tempLCS, _pLCS);
-				sprintf(_pLCS, "%c%s", _pX[_nM], tempLCS);
+				sprintf(_pLCS, "%c%s", _pX[_nM-1], tempLCS);
 
 				LCS_TraceBack(_pX, _pY, _nM - 1, _nN - 1, _pTable, _pLCS);
 			}
 			else if (_pTable->ppData[_nM][_nN] > _pTable->ppData[_nM - 1][_nN]
-				&& _pTable->ppData[_nM][_nN] > _pTable->ppData[_nM][_nN - 1])
+				&& _pTable->ppData[_nM][_nN] == _pTable->ppData[_nM][_nN - 1])
 			{
 				LCS_TraceBack(_pX, _pY, _nM, _nN - 1, _pTable, _pLCS);
 			}

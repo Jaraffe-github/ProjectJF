@@ -27,6 +27,7 @@
       <Filter>Search</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\JFStudyClasses\JFUtileFuntions.h" />
+    <ClInclude Include="..\..\include\JFStudyClasses\JFHuffman.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sort">
@@ -52,5 +53,6 @@
     <ClCompile Include="JFBoyerMoore.cpp">
       <Filter>Search</Filter>
     </ClCompile>
+    <ClCompile Include="JFHuffman.cpp" />
   </ItemGroup>
 </Project>

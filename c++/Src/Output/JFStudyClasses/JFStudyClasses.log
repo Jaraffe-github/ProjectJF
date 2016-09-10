@@ -1,2 +1,5 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-  JFStudyClasses.vcxproj -> D:\ProjectJF\c++\Src\\..\Lib\JFStudyClasses_x64_v140_Debug.lib
+  JFHuffman.cpp
+c:\users\youngmin\desktop\projectjf\projectjf\c++\src\jfstudyclasses\jfhuffman.cpp(96): warning C4018: '<=': signed/unsigned mismatch
+c:\users\youngmin\desktop\projectjf\projectjf\c++\src\jfstudyclasses\jfhuffman.cpp(203): warning C4018: '<': signed/unsigned mismatch
+  JFStudyClasses.vcxproj -> C:\Users\youngmin\Desktop\ProjectJF\ProjectJF\c++\Src\\..\Lib\JFStudyClasses_x64_v140_Debug.lib

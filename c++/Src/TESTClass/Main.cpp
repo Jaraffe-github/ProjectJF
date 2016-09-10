@@ -353,8 +353,8 @@ void main()
 	{
 		std::cout << "LCS" << std::endl;
 
-		char* pX = "GOOD MORNING.";
-		char* pY = "GUTEN MORGEN";
+		char* pX = "Long diff a";
+		char* pY = "a dif gmp";
 		char* pResult;
 
 		int nLenX = strlen(pX);
@@ -370,7 +370,7 @@ void main()
 
 		for (i = 0; i < nLenX + 1; ++i)
 		{
-			table.ppData[i] = (int*)malloc(sizeof(int) + (nLenY + 1));
+			table.ppData[i] = (int*)malloc(sizeof(int) * (nLenY + 1));
 			memset(table.ppData[i], 0, sizeof(int) * (nLenY + 1));
 		}
 
@@ -378,11 +378,47 @@ void main()
 
 		JF::JFSearchUtiles::LCS_PrintTable(&table, pX, pY, nLenX, nLenY);
 
-		pResult = (char*)malloc(sizeof(table.ppData[nLenX][nLenY] + 1));
+		pResult = (char*)malloc(table.ppData[nLenX][nLenY] + 1);
 		sprintf(pResult, "");
 
 		JF::JFSearchUtiles::LCS_TraceBack(pX, pY, nLenX, nLenY, &table, pResult);
 
 		printf("\n");
+		printf("LCS:\"%s\" (Length:%d)\n", pResult, nLength );
+
+		std::cout << std::endl;
+	}
+
+	// Huffman
+	{
+		std::cout << "Huffman" << std::endl;
+
+		char* pSource	= "안녕하세요. 허프만코드 압축 효율에대해서 알아보겠습니다.";
+		char* pDecoded	= "";
+
+		JF::JFStudy::HuffmanNode* pTree = nullptr;
+		JF::JFStudy::BitBuffer encoded	= { nullptr, 0 };
+		JF::JFStudy::HuffmanCode codeTable[MAX_CHAR];
+
+		memset(&codeTable, 0, sizeof(JF::JFStudy::HuffmanCode) * MAX_CHAR);
+
+		JF::JFStudy::Encode(&pTree, (UCHAR*)pSource, &encoded, codeTable);
+
+		printf("Original Size : %d Encoded Size:%d\n", (strlen(pSource) + 1) * sizeof(char) * 8, encoded.nSize);
+
+		pDecoded = (char*)malloc(sizeof(char) * (strlen(pSource) + 1));
+		JF::JFStudy::Decode(pTree, &encoded, (UCHAR*)pDecoded);
+
+		printf("Original : %s\n", pSource);
+		printf("Encoded : ");
+
+		JF::JFStudy::PrintBinary(&encoded);
+
+		printf("\n");
+
+		printf("Decoded : %s\n", pDecoded);
+
+		JF::JFStudy::DestroyTree(pTree);
+		free(pDecoded);
 	}
 }
