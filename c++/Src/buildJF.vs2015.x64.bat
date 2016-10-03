@@ -15,9 +15,9 @@ call "%VS140COMNTOOLS%vsvars32.bat"
 IF EXIST "JFCommonClasses.vs2015.sln" GOTO COMPILE_3D_CLASSES
   @ECHO @ Compile JFCommon Classes
   devenv JFCommonClasses.sln /rebuild "Debug|x64"
-  devenv JFCommonClasses.sln /rebuild "Debug_Dynamic|x64"
+  devenv JFCommonClasses.sln /rebuild "Debug_DLL|x64"
   devenv JFCommonClasses.sln /rebuild "Release|x64"
-  devenv JFCommonClasses.sln /rebuild "Release_Dynamic|x64"
+  devenv JFCommonClasses.sln /rebuild "Release_DLL|x64"
 
 :COMPILE_COMPLETE
 @ECHO ------------------------------------------
