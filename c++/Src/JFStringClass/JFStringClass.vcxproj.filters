@@ -5,6 +5,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\JFStringClass\JFSTR.h" />
-    <ClInclude Include="..\..\include\JFStringClass\JFStringClasses.h" />
+    <ClInclude Include="..\..\include\JFStringClasses.h" />
   </ItemGroup>
 </Project>

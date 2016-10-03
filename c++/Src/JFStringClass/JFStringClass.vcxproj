@@ -163,8 +163,8 @@
     <ClCompile Include="JFSTR.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\JFStringClasses.h" />
     <ClInclude Include="..\..\include\JFStringClass\JFSTR.h" />
-    <ClInclude Include="..\..\include\JFStringClass\JFStringClasses.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

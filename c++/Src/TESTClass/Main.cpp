@@ -1,11 +1,17 @@
+//
+#include <windows.h>
+
 // 메모리 체크
 #include "crtdbg.h"
 
 // 문자열 클래스.
-#include "JFStringClass/JFStringClasses.h"
+#include "JFStringClasses.h"
 
 // 공부용 클래스.
-#include "JFStudyClasses/JFStudyClasses.h"
+#include "JFStudyClasses.h"
+
+// 테스트용 클래스들
+#include "JFObjectClasses.h"
 
 // test
 #include <iostream>
@@ -420,5 +426,17 @@ void main()
 
 		JF::JFStudy::DestroyTree(pTree);
 		free(pDecoded);
+	}
+
+	// API File
+	{
+		FILE_HANDLE file = JFAPI::FILE::Open(L"../Box.ASE", eFILE_OPERATION::READ);
+		size_t fileSize = JFAPI::FILE::GetLength(file);
+
+		char* buffer = new char[fileSize + 1];
+		buffer[fileSize] = '\0';
+		JFAPI::FILE::Read(file, fileSize, buffer);
+
+		JFAPI::FILE::Close(file);
 	}
 }

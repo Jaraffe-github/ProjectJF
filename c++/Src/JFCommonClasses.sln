@@ -13,6 +13,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TESTClass", "TESTClass\TEST
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFStudyClasses", "JFStudyClasses\JFStudyClasses.vcxproj", "{93A21F38-E25A-4DD1-910E-4751E43F9A65}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFArchiveClasses.Shared", "JFArchiveClasses\JFArchiveClasses.vcxitems", "{45D41ACC-2C3C-43D2-BC10-02AA73FFC7C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Native", "Windows Native", "{6EB6C4B1-3FA3-48BE-8BD2-89EFB9C0CEBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFArchiveClasses(Windows)", "JFArchiveClasses\JFArchiveClasses(Windows)\JFArchiveClasses(Windows).vcxproj", "{FF9AE5A5-1553-4821-990A-1AC06EDC6710}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFObjectClasses.Shared", "JFObjectClasses.Shared\JFObjectClasses.Shared.vcxitems", "{9713BCC9-82AE-4FBC-A0DF-4FE859CD88A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFCommonClasses.Shared", "JFCommonClasses\JFCommonClasses.vcxitems", "{286FAE71-1464-44A5-8792-4E80FDD20AB7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JFObjectClasses(Windows)", "JFObjectClasses\JFObjectClasses(Windows)\JFObjectClasses(Windows).vcxproj", "{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,8 +57,28 @@ Global
 		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Release|x64.Build.0 = Release|x64
 		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Release|x86.ActiveCfg = Release|Win32
 		{93A21F38-E25A-4DD1-910E-4751E43F9A65}.Release|x86.Build.0 = Release|Win32
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Debug|x64.ActiveCfg = Debug|x64
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Debug|x64.Build.0 = Debug|x64
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Debug|x86.ActiveCfg = Debug|Win32
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Debug|x86.Build.0 = Debug|Win32
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Release|x64.ActiveCfg = Release|x64
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Release|x64.Build.0 = Release|x64
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Release|x86.ActiveCfg = Release|Win32
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710}.Release|x86.Build.0 = Release|Win32
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Debug|x64.ActiveCfg = Debug|x64
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Debug|x64.Build.0 = Debug|x64
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Debug|x86.Build.0 = Debug|Win32
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Release|x64.ActiveCfg = Release|x64
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Release|x64.Build.0 = Release|x64
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Release|x86.ActiveCfg = Release|Win32
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF9AE5A5-1553-4821-990A-1AC06EDC6710} = {6EB6C4B1-3FA3-48BE-8BD2-89EFB9C0CEBA}
+		{0E2AB869-6AAF-4DCA-BCC1-31ACFC690D79} = {6EB6C4B1-3FA3-48BE-8BD2-89EFB9C0CEBA}
 	EndGlobalSection
 EndGlobal
