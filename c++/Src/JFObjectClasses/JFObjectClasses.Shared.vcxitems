@@ -13,4 +13,11 @@
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)JFAPIFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFObjectClasses.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFObjectClasses\JFAPIFile.h" />
+  </ItemGroup>
 </Project>

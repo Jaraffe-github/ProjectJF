@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppClean.targets(76,5): warning : 'c:\users\ccm13\desktop\myprojects\git\projectjf\c++\output\jfobjectclasses\x64_v140_debug_dynamic\jfobjectclasses_x64_v140_debug_dynamic.pch' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+  pch.cpp
+c:\users\ccm13\desktop\myprojects\git\projectjf\c++\include\JFCommonClasses/JFDefinitionString.h(27): warning C4100: '_Size': 참조되지 않은 정식 매개 변수입니다.
+  JFAPIFile_Windows.cpp
+  JFObjectClasses(Windows).vcxproj -> C:\Users\ccm13\Desktop\MyProjects\Git\ProjectJF\c++\Src\JFObjectClasses\JFObjectClasses(Windows)\../../../Lib/JFObjectClasses_x64_v140_Debug_Dynamic.lib
