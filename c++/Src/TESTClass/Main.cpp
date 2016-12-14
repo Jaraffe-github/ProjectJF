@@ -29,8 +29,8 @@ void main()
 	{
 		char Test[] = "I Don't have any Question";
 		std::cout << Test << std::endl;
-		JF::JFStringUT::Reverse(Test);
-		std::cout << "Reverse" << Test << std::endl;
+		char* revers = JF::JFStringUT::Reverse(Test);
+		std::cout << "Reverse" << revers << std::endl;
 		std::cout << std::endl;
 	}
 	
