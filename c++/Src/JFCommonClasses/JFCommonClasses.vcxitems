@@ -16,7 +16,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFCommonClasses.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFCommonClasses\JFAssertionMacros.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFCommonClasses\JFDefinitions.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFCommonClasses\JFDefinitionString.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFCommonClasses\JFTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\JFCommonClasses\JFPlatformMacros.h" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,5 @@
+﻿  pch.cpp
+d:\projectjf\c++\include\JFCommonClasses/JFDefinitionString.h(27): warning C4100: '_Size': 참조되지 않은 정식 매개 변수입니다.
+  JFFileHandle.cpp
+JFFileHandle.obj : warning LNK4221: 이 개체 파일은 이전에 정의되지 않은 공용 기호를 정의하지 않으므로 이 라이브러리를 사용하는 어떠한 링크 작업에도 사용되지 않습니다.
+  JFFileSystemClasses(Windows).vcxproj -> D:\ProjectJF\c++\Src\JFFileSystemClasses\JFFileSystemClasses(Windows)\../../../Lib/JFFileSystemClasses_x64_v140_Debug.lib

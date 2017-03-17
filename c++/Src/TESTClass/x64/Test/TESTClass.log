@@ -1,0 +1,6 @@
+﻿  Main.cpp
+d:\projectjf\c++\include\JFStudyClasses/JFSearchUtiles.h(85): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+d:\projectjf\c++\include\JFStudyClasses/JFSearchUtiles.h(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+LINK : fatal error LNK1104: 'JFFileSystemClasses_x64_v140_Release.lib' 파일을 열 수 없습니다.

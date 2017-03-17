@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (../../../Output/JFFileSystemClasses(Windows)/x64_v140_Release/) contains files shared from another project (JFFileSystemClasses(Windows).vcxproj, JFFileSystemClasses(Windows).vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  pch.cpp
+d:\projectjf\c++\include\JFCommonClasses/JFDefinitionString.h(27): warning C4100: '_Size': 참조되지 않은 정식 매개 변수입니다.
+  JFFileSystemClasses(Windows).vcxproj -> D:\ProjectJF\c++\Src\JFFileSystemClasses\JFFileSystemClasses(Windows)\../../../Lib/JFFileSystemClasses(Windows)_x64_v140_Release.lib

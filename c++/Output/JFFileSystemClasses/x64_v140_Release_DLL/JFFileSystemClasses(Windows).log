@@ -1,0 +1,3 @@
+﻿  pch.cpp
+d:\projectjf\c++\include\JFCommonClasses/JFDefinitionString.h(27): warning C4100: '_Size': 참조되지 않은 정식 매개 변수입니다.
+  JFFileSystemClasses(Windows).vcxproj -> D:\ProjectJF\c++\Src\JFFileSystemClasses\JFFileSystemClasses(Windows)\../../../Lib/JFFileSystemClasses_x64_v140_Release_DLL.lib
